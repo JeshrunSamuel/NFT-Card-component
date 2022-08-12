@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | NFT preview card component</title>
+  <title>NFT preview card component</title>
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -18,15 +18,23 @@
 <body>
   <div class="container">
     
-    <img src="images/image-equilibrium.jpg" alt="crypto cube">
+    <img src="images/image-equilibrium.jpg" alt="crypto cube" id="cube">
     <h3>Equilibrium #3429</h3> 
-
-    <p>Our Equilibrium collection promotes balance and calm.</p>
-
-    <p>0.041 ETH</p>
-    <p>3 days left</p>
-    <img src="images/image-avatar.png" alt="image of a boy">
-    <p>Creation of Jules Wyvern</p>
+    <p class="detail">Our Equilibrium collection promotes balance and calm.</p>
+    <div id="money-cur" >
+      <div class="eth_cnt">
+        <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg" class="eth"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+        <p class="eth_txt">0.041 ETH</p>
+      </div>
+      <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" class="clock"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+      <p class="trail">3 days left</p>
+    </div>
+    
+    <hr>
+    <div id="foot">
+    <img src="images/image-avatar.png" alt="image of a boy" id="avatar">
+    <p>Creation of <span>Jules Wyvern</span></p>
+    </div>
   </div>
   
   <div class="attribution">

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 330px;
+    min-width: 270px;
+    background-color: hsl(216, 50%, 16%);
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+hr {
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    height: 1px;
+}
+img#cube {
+    width: 100%;
+    border-radius: 15px;
+}
+
+img#avatar {
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+p {
+    display: inline;
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+p.eth_txt {
+    color: hsl(178, 100%, 50%);
+}
+
+#money-cur {
+
+    display: flex;
+    align-items:baseline;
+    vertical-align:auto;
+    justify-content: flex-end;
+    gap: 5px;
+
+}
+
+#money-cur p {
+    font-size: 18px;
+    position: relative;
+    top: -2px;
+    
+}
+#money-cur .eth_cnt {
+   margin-right: auto;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
