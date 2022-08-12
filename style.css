@@ -24,6 +24,17 @@ hr {
     border: none;
     height: 1px;
 }
+
+
+#view {
+    margin: 0;
+    position: fixed;
+    left: 165px;
+    top: 145px;
+    display: block;
+    background: hsl(178, 100%, 50%);
+    transform: translateX(-50%);
+}
 img#cube {
     width: 100%;
     border-radius: 15px;
@@ -82,4 +93,9 @@ p.eth_txt {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#cont_img:hover #view {
+    display: block;
+    background: hsl(178, 100%, 50%);
 }
