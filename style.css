@@ -11,8 +11,12 @@ body {
     background-color: hsl(216, 50%, 16%);
     box-sizing: border-box;
     padding: 20px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    margin: auto;
     border-radius: 15px;
 }
 hr {
@@ -27,7 +31,7 @@ img#cube {
 
 img#avatar {
     width: 10%;
-    border: 1px solid white;
+    border: px solid white;
     border-radius: 50%;
 
 }
@@ -61,6 +65,16 @@ p.eth_txt {
 }
 #money-cur .eth_cnt {
    margin-right: auto;
+}
+
+#foot p {
+    position: relative;
+    top: -7px;
+    left: 4px;
+}
+
+#foot p span {
+    color: white;
 }
 
 .attribution {
