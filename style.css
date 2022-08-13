@@ -5,6 +5,11 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+
+#wrapper {
+    width: 1440;
+}
+
 .container {
     width: 330px;
     min-width: 270px;
@@ -24,6 +29,7 @@ hr {
     background-color: hsl(215, 32%, 27%);
     border: none;
     height: 1px;
+    margin-top: 3px;
 }
 
 #view {
@@ -47,21 +53,28 @@ img#cube {
 
 img#avatar {
     width: 10%;
-    border: px solid white;
+    border: 2px solid white;
     border-radius: 50%;
 
 }
 
 p {
     display: inline;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: hsl(215, 51%, 70%);
 }
 
-p.eth_txt {
+p.eth_txt{
     color: hsl(178, 100%, 50%);
+    font-weight: 500;
 }
+
+#money-cur p.eth_txt, #money-cur p.trail {
+    font-size: 15px;
+}
+
+
 h3 {
     transition: 0.5s ease;
 }
@@ -73,6 +86,7 @@ h3 {
     vertical-align:auto;
     justify-content: flex-end;
     gap: 5px;
+    margin: 9px 0 1px;
 
 }
 
@@ -88,10 +102,13 @@ h3 {
 
 #foot p {
     position: relative;
-    top: -7px;
-    left: 4px;
+    top: -11px;
+    left: 7px;
+    font-size: 15px;
 }
-
+#foot {
+    margin: 13px 0 5px;
+}
 #foot p span {
     color: white;
     transition: 0.5s ease;
@@ -121,4 +138,15 @@ h3:hover {
 #foot p span:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  
+    #wrapper {
+        width: 100%;
+    }
+
+    #view:hover{
+        
+    }
 }
