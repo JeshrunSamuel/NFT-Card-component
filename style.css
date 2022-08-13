@@ -25,19 +25,23 @@ hr {
     height: 1px;
 }
 
-
 #view {
-    margin: 0;
-    position: fixed;
-    left: 165px;
-    top: 145px;
-    display: block;
-    background: hsl(178, 100%, 50%);
-    transform: translateX(-50%);
+    transition: 0.5s ease;
+    opacity: 0;
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    padding: 140px 120px 105px;
+    border-radius: 10px;
 }
+
 img#cube {
     width: 100%;
     border-radius: 15px;
+    display: block;
 }
 
 img#avatar {
@@ -56,6 +60,9 @@ p {
 
 p.eth_txt {
     color: hsl(178, 100%, 50%);
+}
+h3 {
+    transition: 0.5s ease;
 }
 
 #money-cur {
@@ -86,6 +93,7 @@ p.eth_txt {
 
 #foot p span {
     color: white;
+    transition: 0.5s ease;
 }
 
 .attribution {
@@ -95,7 +103,16 @@ p.eth_txt {
     transform: translateX(-50%);
 }
 
-#cont_img:hover #view {
-    display: block;
-    background: hsl(178, 100%, 50%);
+#view:hover {
+    opacity: 1;
+}
+
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#foot p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
