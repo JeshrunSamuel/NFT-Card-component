@@ -18,6 +18,7 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     border-radius: 15px;
+    box-shadow: 10px 15px 10px 10px rgba(0, 0, 0, 0.027), -10px 15px 10px 10px rgba(0, 0, 0, 0.027);
 }
 hr {
     background-color: hsl(215, 32%, 27%);
@@ -101,6 +102,11 @@ h3 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    color: rgb(221, 221, 221);
+}
+
+.attribution a {
+    color: hsl(178, 100%, 50%);
 }
 
 #view:hover {
